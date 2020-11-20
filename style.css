@@ -1,0 +1,45 @@
+body{
+    background-color: skyblue;
+}
+header{
+    margin-left: 25rem;
+    margin-top: 3rem;
+    font-size: 50px;
+}
+.forecast{
+    margin-left: 38rem;
+    margin-top: 5rem;
+
+}
+.forecast-btn{
+    justify-content: center;
+}
+#location{
+    margin-top: 2rem;
+    margin-left: 15rem;
+}
+#temp{
+    margin-left: 18rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.card-header{
+    background-color: red;
+
+}
+p{
+    padding-top: 1rem;
+    justify-content: space-between;
+    word-spacing: 50px;
+    margin-left: 2rem;
+}
+span{
+   word-spacing: 0;
+}
+#state{
+    color: green;
+}
+#zipcode{
+    color: yellow;
+    margin-left: 5px;
+}
