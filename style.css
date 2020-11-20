@@ -36,10 +36,13 @@ p{
 span{
    word-spacing: 0;
 }
+#city{
+    color: white;
+}
 #state{
-    color: green;
+    color: white;
 }
 #zipcode{
-    color: yellow;
-    margin-left: 5px;
+    color: white;
+    
 }
