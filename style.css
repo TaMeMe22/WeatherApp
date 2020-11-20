@@ -24,7 +24,7 @@ header{
     padding-bottom: 3rem;
 }
 .card-header{
-    background: linear-gradient(to right, #9900ff 0%, #66ffff 100%);
+    background: linear-gradient(to right, #9900ff 20%, #66ffff 80%);
 
 }
 p{
