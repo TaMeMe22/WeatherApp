@@ -1,18 +1,24 @@
 body{
-    background-color:  #66ffff;
+    background-color:  white;
 }
 header{
-    margin-left: 25rem;
-    margin-top: 3rem;
+    margin-left: 30rem;
+    margin-top: 2rem;
     font-size: 50px;
 }
 .forecast{
     margin-left: 38rem;
-    margin-top: 5rem;
-
+    margin-top: 1rem;
 }
-.forecast-btn{
-    justify-content: center;
+#getForecast{
+    margin-left: 45rem;
+    margin-top: 1rem;
+}
+#statelist{
+    padding-top: 2.4px;
+    padding-left: 1rem;
+    padding-bottom: 2.4px;
+    padding-right: 1rem;
 }
 #location{
     margin-top: 2rem;
@@ -36,13 +42,6 @@ p{
 span{
    word-spacing: 0;
 }
-#city{
-    color: white;
-}
-#state{
-    color: white;
-}
-#zipcode{
-    color: white;
-    
+h1{
+    word-spacing: 0;
 }
