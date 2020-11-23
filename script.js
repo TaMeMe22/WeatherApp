@@ -6,3 +6,12 @@ fetch(`${URI}?q=Memphis&appid=${KEY}`).then((res)=>{
 }).then((data)=>{
   console.log(data)
 })
+
+
+const dateElement = document.getElementById("date");
+
+//show the date
+const options = {weekday:"short", month:"short", day:"numeric" };
+const today = new Date();
+
+dateElement.innerHTML = today.toLocaleDateString("en-US", options);
