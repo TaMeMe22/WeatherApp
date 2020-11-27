@@ -11,93 +11,164 @@
         <link rel="stylesheet" href="./style.css">
 
     <title>Lets Check The Weather</title>
-
+    
 </head>
 <body>
     <section>
         <div class="container-fluid">
-         <div class="row">
-             <header>LETS CHECK THE WEATHER!</header>
-         </div >   
+                    <div class="row">
+                            <header>LETS CHECK THE WEATHER!</header>
+                    </div >   
+                    
+                    <div>
+                    <input class="search" type="text" placeholder="Search for a city..." autocomplete="off" />
+                    
+                        <i class="fa fa-search"></i>
+                    
+                    </div>
+                    
+                <!--    <select name="states" id="statelist">
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                    </select>
+        
             
+                <button id="getForecast"> Get Forecast</button> -->
+                
+            
+                <section class="col-12 col-md-8" id="locationtitle">
+                        <div class="row justify-content-center" id="info">
+                             <h1 class="col-12 col-md-auto">The 7-Day Forecast for</h1> <h1 id="city"> Munford, </h1> <h1 id="state"> TN </h1>  
+                        
+                        </div>
+                </section>
 
-    <input class="forecast" type="text" placeholder="ENTER CITY...">
-    <select name="states" id="statelist">
-        <option value="AL">AL</option>
-        <option value="AK">AK</option>
-        <option value="AZ">AZ</option>
-        <option value="AR">AR</option>
-        <option value="CA">CA</option>
-        <option value="CO">CO</option>
-        <option value="CT">CT</option>
-        <option value="DE">DE</option>
-        <option value="FL">FL</option>
-        <option value="GA">GA</option>
-        <option value="HI">HI</option>
-        <option value="ID">ID</option>
-        <option value="IL">IL</option>
-        <option value="IN">IN</option>
-        <option value="IA">IA</option>
-        <option value="KS">KS</option>
-        <option value="KY">KY</option>
-        <option value="LA">LA</option>
-        <option value="ME">ME</option>
-        <option value="MD">MD</option>
-        <option value="MA">MA</option>
-        <option value="MI">MI</option>
-        <option value="MN">MN</option>
-        <option value="MS">MS</option>
-        <option value="MO">MO</option>
-        <option value="MT">MT</option>
-        <option value="NE">NE</option>
-        <option value="NV">NV</option>
-        <option value="NH">NH</option>
-        <option value="NJ">NJ</option>
-        <option value="NM">NM</option>
-        <option value="NY">NY</option>
-        <option value="NC">NC</option>
-        <option value="ND">ND</option>
-        <option value="OH">OH</option>
-        <option value="OK">OK</option>
-        <option value="OR">OR</option>
-        <option value="PA">PA</option>
-        <option value="RI">RI</option>
-        <option value="SC">SC</option>
-        <option value="SD">SD</option>
-        <option value="TN">TN</option>
-        <option value="TX">TX</option>
-        <option value="UT">UT</option>
-        <option value="VT">VT</option>
-        <option value="VA">VA</option>
-        <option value="WA">WA</option>
-        <option value="WV">WV</option>
-        <option value="WI">WI</option>
-        <option value="WY">WY</option>
-    </select>
-    
-</div>
-    <button id="getForecast"> Get Forecast</button>
-         
-    
-    <section class="col-12 col-md-8" id="location">
-        <div class="row justify-content-center" id="info">
-          <h1 class="col-12 col-md-auto">The 7-Day Forecast for</h1> <h1 id="currentcity"> Munford, </h1> <h1 id="currentstate"> TN </h1>  
-             
-        </div>
-    </section>
-    <section>
-        <div class="col-12 col-md-8" id="temp"> 
-            <div class="card-header" id="day1"><p> <span id="date">Thur Nov 12</span> <span id="currtemp">Temperature: 50°</span> <span id="hi-lo">Hi: 75°/Lo: 52°</span>   <span id="precip">Precipitation: 10%</span> <span id="condition">Conditions: Partly Cloudy </span></p></div>
-            <div class="card-header" id="day2"><p> <span id="date">Thur Nov 13</span> <span id="currtemp">Temperature: 50°</span> <span id="hi-lo">Hi: 75°/Lo: 52°</span>   <span id="precip">Precipitation: 10%</span> <span id="condition">Conditions: Partly Cloudy </span></p></div>
-            <div class="card-header" id="day3"><p> <span id="date">Thur Nov 13</span> <span id="currtemp">Temperature: 50°</span> <span id="hi-lo">Hi: 75°/Lo: 52°</span>   <span id="precip">Precipitation: 10%</span> <span id="condition">Conditions: Partly Cloudy </span></p></div>
-            <div class="card-header" id="day4"><p> <span id="date">Thur Nov 13</span> <span id="currtemp">Temperature: 50°</span> <span id="hi-lo">Hi: 75°/Lo: 52°</span>   <span id="precip">Precipitation: 10%</span> <span id="condition">Conditions: Partly Cloudy </span></p></div>
-            <div class="card-header" id="day5"><p> <span id="date">Thur Nov 13</span> <span id="currtemp">Temperature: 50°</span> <span id="hi-lo">Hi: 75°/Lo: 52°</span>   <span id="precip">Precipitation: 10%</span> <span id="condition">Conditions: Partly Cloudy </span></p></div>
-            <div class="card-header" id="day6"><p> <span id="date">Thur Nov 13</span> <span id="currtemp">Temperature: 50°</span> <span id="hi-lo">Hi: 75°/Lo: 52°</span>   <span id="precip">Precipitation: 10%</span> <span id="condition">Conditions: Partly Cloudy </span></p></div>
-            <div class="card-header" id="day7"><p> <span id="date">Thur Nov 13</span> <span id="currtemp">Temperature: 50°</span> <span id="hi-lo">Hi: 75°/Lo: 52°</span>   <span id="precip">Precipitation: 10%</span> <span id="condition">Conditions: Partly Cloudy </span></p></div> 
-        </div>
-    </section>
-</div>
+       
+                <section>     
+                    <div class="row">
+                        <div class="col-md">
+                                <div class="current" id="day1">
+                                    <div id="date">Thur Nov 11</div>
+                                    <div class="temp">55<span>°F</span></div>
+                                    <div class="hi-low">57°F / 35°F</div>
+                                    <div class="weather">Sunny</div>
+                                </div>
+                        </div>  
+                        
+                        <div class="col-md">
+                                <div class="current" id="day2">
+                                    <div id="date">Thur Nov 12</div>
+                                    <div class="temp">55<span>°F</span></div>
+                                    <div class="hi-low">57°F / 35°F</div>
+                                    <div class="weather">Sunny</div>                        
+                                </div>
+                        </div>
+                        
+                        <div class="col-md">
+                            <div class="current" id="day3">
+                                <div id="date">Thur Nov 13</div>
+                                <div class="temp">55<span>°F</span></div>
+                                <div class="hi-low">57°F / 35°F</div>
+                                <div class="weather">Sunny</div>                        
+                            </div>
+                        </div>
 
+                        <div class="col-md">
+                            <div class="current" id="day4">
+                                <div id="date">Thur Nov 14</div>
+                                <div class="temp">55<span>°F</span></div>
+                                <div class="hi-low">57°F / 35°F</div>
+                                <div class="weather">Sunny</div>                        
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="current" id="day5">
+                                <div id="date">Thur Nov 14</div>
+                                <div class="temp">55<span>°F</span></div>
+                                <div class="hi-low">57°F / 35°F</div>
+                                <div class="weather">Sunny</div>                        
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="current" id="day6">
+                                <div id="date">Thur Nov 15</div>
+                                <div class="temp">55<span>°F</span></div>
+                                <div class="hi-low">57°F / 35°F</div>
+                                <div class="weather">Sunny</div>                        
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="current" id="day7">
+                                <div id="date">Thur Nov 16</div>
+                                <div class="temp">55<span>°F</span></div>
+                                <div class="hi-low">57°F / 35°F</div>
+                                <div class="weather">Sunny</div>                        
+                            </div>
+                        </div>
+
+                    </div>                    
+                    
+                </section>
+
+   </div>
+
+
+
+
+
+
+    </section>
 
             <!-- JavaScript Libraries -->
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
