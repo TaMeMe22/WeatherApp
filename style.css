@@ -37,7 +37,7 @@ header{
     height: 260px;
     margin-top: 5rem;
 }
-#day1{
+#current{
     font-size: 30px;
     box-sizing: border-box;
     background-size: cover;
