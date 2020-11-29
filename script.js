@@ -1,7 +1,7 @@
 //show the date
 //const dateElement = document.getElementById("date");
-const today = (new Date()).toUTCString();
-const options = { weekday: "short", month: "short", day: "numeric" };
+const date = (new Date()).toDateString();
+//const options = { weekday: "short", month: "short", day: "numeric" };
 
 //dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
@@ -26,17 +26,18 @@ document.querySelectorAll('.search')[0].addEventListener('keydown', (e) => {
         if (!response.ok) {
           return Error("City Not Found");
         }
-        console.log(response);
+        //console.log(response);
         return response.json();
       })
       .then(data => {
-        console.log(data);
+        //console.log(data);
         document.getElementById("current").innerHTML = `
-                                    <div id="date">${today}</div>
+                                    <div id="date">${date}</div>
                                     <div class="temp">${Math.round(data.main.temp)}<span>°F</span></div>
                                     <div class="hi-low">${Math.round(data.main.temp_max)}°F / ${Math.round(data.main.temp_min)}°F</div>
-                                    <div class="weather">Sunny</div>
+                                    <div class="weather">${data.weather[0].main}</div>
         `
+        
       })
   }
 });
