@@ -25,6 +25,7 @@ document.querySelectorAll('.search')[0].addEventListener('keydown', (e) => {
       .then(response => {
         if (!response.ok) {
           return Error("City Not Found");
+           
         }
         //console.log(response);
         return response.json();
