@@ -56,7 +56,6 @@ header{
     color: white;
     margin-left: .5rem;
 
-
 }
 #day3{
     font-size: 30px;
@@ -85,8 +84,7 @@ header{
     text-align: center;
     padding-top: 15px;
     color: white;
-     
-
+    margin-left: .5rem;
 
 }
 #day6{
@@ -96,7 +94,7 @@ header{
     text-align: center;
     padding-top: 15px;
     color: white;
-     
+     margin-left: .5rem; 
 
 }
 #day7{
